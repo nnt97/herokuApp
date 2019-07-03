@@ -13,7 +13,7 @@ public class RestController {
 
 	@RequestMapping(value="/webhook/trigger", method=RequestMethod.POST,
 				consumes = MediaType.ALL_VALUE)
-	public String show(@RequestBody Map<String,String> body) {
+	public String show() {
 		System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 		return "thainn2";
 	}

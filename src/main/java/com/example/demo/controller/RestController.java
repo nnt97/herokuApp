@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class RestController {
 
 	@RequestMapping(value="/webhook/trigger", method=RequestMethod.POST,
-				consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+				consumes = {"application/x-www-form-urlencoded"})
 	public String show(@RequestBody Map<String,String> body) {
 		System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 		return "thainn2";
